@@ -8,6 +8,33 @@ excerpt: An unplanned bivouac on Ben Nevis.
 ## HH
 </p>
 
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="right">a</td>
+<td class="right">b</td>
+<td class="right">c</td>
+</tr>
+
+<tr>
+<td class="right">1</td>
+<td class="right">2</td>
+<td class="right">3</td>
+</tr>
+</tbody>
+</table>
+
+
 <p>
 new new
 </p>
