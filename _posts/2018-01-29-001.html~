@@ -8,8 +8,8 @@ excerpt: An unplanned bivouac on Ben Nevis.
 HH
 </p>
 
-<table id="aaaaaa" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption class="t-above"><span class="table-number">Table 1:</span> tttt</caption>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
 
 <colgroup>
 <col  class="right" />
@@ -32,8 +32,6 @@ HH
 </tr>
 </tbody>
 </table>
-
-
 <p>
 <b>new new</b>
 </p>
