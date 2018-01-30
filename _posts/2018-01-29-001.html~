@@ -5,7 +5,7 @@ excerpt: An unplanned bivouac on Ben Nevis.
 ---
 
 <p>
-## HH
+HH
 </p>
 
 
@@ -36,7 +36,7 @@ excerpt: An unplanned bivouac on Ben Nevis.
 
 
 <p>
-new new
+<b>bold</b> new new
 </p>
 
 <p>
@@ -47,9 +47,11 @@ It was early January when six of us travelled up to &#x2026;.
 an emptied glass<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>
 </p>
 
-<p>
-<i><a href="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg|dogdog">https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg|dogdog</a></i>
+
+<div class="figure">
+<p><i><img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" alt="maxresdefault.jpg" /></i>
 </p>
+</div>
 
 <p>
 asdf
