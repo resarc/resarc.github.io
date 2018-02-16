@@ -168,6 +168,10 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+
+    .figure {
+	align: center;
+    }
 }
 
 .page-heading {
