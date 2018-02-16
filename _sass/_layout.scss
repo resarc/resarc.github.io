@@ -171,7 +171,9 @@
 }
 
 .page-content.figure {
-    align: center; 
+    img {
+	align: center;
+    }
 }
 
 .page-heading {
