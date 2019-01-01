@@ -55,6 +55,7 @@ html {
 
 @media screen and (max-width: 1350px) {
   #nav-head {
+    float: none;
     left: 40px;
     top: 50px;
     width: 100%;
