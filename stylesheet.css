@@ -1,0 +1,125 @@
+a {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  white-space: nowrap;
+  overflow: auto;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 0.2;
+  opacity: 0.6;
+  -webkit-text-stroke: 0.7px black;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 0.2;
+  opacity: 0.6;
+  -webkit-text-stroke: 0.7px black;
+}
+
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 0.2;
+  opacity: 0.6;
+  -webkit-text-stroke: 0.7px black;
+}
+
+html {
+  margin-bottom: 50px;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+.drop-shadow {
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#div-food {
+  white-space: nowrap;
+}
+
+#div-food > a {
+  display: block;
+}
+
+#div-food a:hover {
+  color: black;
+}
+
+#name {
+  line-height: 0.6;
+}
+
+#nav-head {
+  //background-color: red;
+  clear: both;
+  display: inline-block;
+  float: left;
+  right: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+#nav-name {
+  //background-color: red;
+  clear: both;
+  display: inline-block;
+  float: left;
+  left: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+#photo {
+  display: inline-block;
+  left: 550px;
+  position: relative;
+  top: 15px;
+  z-index: 99;
+}
+
+#photo img {
+  cursor: pointer;
+  display: block;
+  padding: 5px;
+  //width: 500;
+}
+
+#photo video {
+  display: block;
+  padding: 5px;
+  //width: 500;
+}
+
+#visited {
+  color: black;
+}
