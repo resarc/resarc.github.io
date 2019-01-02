@@ -149,8 +149,9 @@ html {
     opacity: 0.6;
     -webkit-text-stroke: 0.4px black;
 }
-  #name {
-    line-height: 0.2;
+
+  #nav-name {
+    top: auto;
 }
   
   #nav-head {
