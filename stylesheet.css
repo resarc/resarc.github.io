@@ -53,21 +53,6 @@ html {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 1350px) {
-  #nav-head {
-    float: none;
-    left: 40px;
-    top: 50px;
-    width: 100%;
-  }
-  #photo {
-    left: 40px;
-  }
-  #photo img {
-  width: 80%;
-  }
-}
-
 .hand {
   cursor: pointer;
 }
@@ -137,4 +122,19 @@ html {
 
 #visited {
   color: black;
+}
+
+@media screen and (max-width: 1350px) {
+  #nav-head {
+    float: none;
+    left: 40px;
+    top: 50px;
+    width: 100%;
+  }
+  #photo {
+    left: 40px;
+  }
+  #photo img {
+  width: 80%;
+  }
 }
