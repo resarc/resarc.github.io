@@ -145,10 +145,14 @@ html {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 25px;
     font-weight: normal;
-    line-height: 0.1;
+    line-height: 0.2;
     opacity: 0.6;
     -webkit-text-stroke: 0.4px black;
 }
+  #name {
+    line-height: 0.2;
+}
+  
   #nav-head {
     float: none;
     left: 40px;
