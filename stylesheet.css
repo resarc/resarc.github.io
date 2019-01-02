@@ -132,6 +132,7 @@ html {
     width: 100%;
   }
   #photo {
+    display: block;
     left: 40px;
   }
   #photo img {
