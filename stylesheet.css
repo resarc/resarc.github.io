@@ -152,17 +152,18 @@ html {
 
   #nav-name {
     top: auto;
+    left: 20px;
 }
   
   #nav-head {
     float: none;
-    left: 40px;
+    left: 20px;
     top: 50px;
     width: 100%;
   }
   #photo {
     display: block;
-    left: 40px;
+    left: 20px;
   }
   #photo img {
   width: 80%;
