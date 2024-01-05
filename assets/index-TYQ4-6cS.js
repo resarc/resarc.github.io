@@ -1,12 +1,12 @@
-(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))v(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const g of t.addedNodes)g.tagName==="LINK"&&g.rel==="modulepreload"&&v(g)}).observe(document,{childList:!0,subtree:!0});function u(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function v(e){if(e.ep)return;e.ep=!0;const t=u(e);fetch(e.href,t)}})();addEventListener("load",function(){var S=document.querySelectorAll("pre code.hljs");Array.prototype.forEach.call(S,function(s){var u=s.result.language;s.insertAdjacentHTML("afterbegin",`<label>${u}</label>`)})});let b=document.createElement("div");b.classList.add("menu","rotating");b.innerHTML=`
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))v(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const b of t.addedNodes)b.tagName==="LINK"&&b.rel==="modulepreload"&&v(b)}).observe(document,{childList:!0,subtree:!0});function g(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function v(e){if(e.ep)return;e.ep=!0;const t=g(e);fetch(e.href,t)}})();addEventListener("load",function(){var i=document.querySelectorAll("pre code.hljs");Array.prototype.forEach.call(i,function(s){var g=s.result.language;s.insertAdjacentHTML("afterbegin",`<label>${g}</label>`)})});let y=document.getElementById("logo"),w=document.querySelectorAll("#logo svg");y.addEventListener("click",function(){console.log("aa"),w.forEach(i=>{i.classList.toggle("pause")})});let f=document.createElement("div");f.classList.add("menu","rotating");f.innerHTML=`
   <div id="btn-html" class="menu-item">HTML</div>
   <div id="btn-css" class="menu-item">CSS</div>
   <div id="btn-js" class="menu-item">JS</div>
-`;document.body.appendChild(b);document.querySelector("#btn-html").addEventListener("click",function(){document.querySelector("#section-html").scrollIntoView()});document.querySelector("#btn-css").addEventListener("click",function(){document.querySelector("#section-css").scrollIntoView()});document.querySelector("#btn-js").addEventListener("click",function(){document.querySelector("#section-js").scrollIntoView()});let f=document.createElement("div");f.classList.add("pages");f.innerHTML=`
+`;document.body.appendChild(f);document.querySelector("#btn-html").addEventListener("click",function(){document.querySelector("#section-html").scrollIntoView()});document.querySelector("#btn-css").addEventListener("click",function(){document.querySelector("#section-css").scrollIntoView()});document.querySelector("#btn-js").addEventListener("click",function(){document.querySelector("#section-js").scrollIntoView()});let S=document.createElement("div");S.classList.add("pages");S.innerHTML=`
   <div id="btn-project" class="menu-item">Project</div>
   <div id="btn-details" class="menu-item">Details</div>
   <div id="btn-classworks" class="menu-item">Classworks</div>
-`;document.body.appendChild(f);document.querySelector("#btn-project").addEventListener("click",function(){document.querySelector("#section-project").scrollIntoView()});document.querySelector("#btn-details").addEventListener("click",function(){document.querySelector("#section-details").scrollIntoView()});document.querySelector("#btn-classworks").addEventListener("click",function(){document.querySelector("#section-classworks").scrollIntoView()});function y(){return window.scrollTop||document.body.scrollTop||document.documentElement&&document.documentElement.scrollTop}y();let a;function w(){window.scrollBy(0,2,"smooth")}function x(){clearInterval(a),a=setInterval(w,50)}function q(){clearInterval(a)}window.addEventListener("wheel",function(){clearInterval(a)});window.addEventListener("scroll",function(){window.scrollY+window.innerHeight>=document.body.offsetHeight&&clearInterval(a)});function z(){clearInterval(a),document.body.scrollTop=0,document.documentElement.scrollTop=0}let o=document.createElement("div");o.style.background="lime";o.style.color="black";o.style.padding="5px 10px";o.classList.add("scroll-box-item");o.innerHTML="Auto";o.addEventListener("click",x);let r=document.createElement("div");r.style.background="red";r.style.padding="5px 10px";r.innerHTML="Stop";r.classList.add("scroll-box-item");r.addEventListener("click",q);let l=document.createElement("div");l.style.background="lightblue";l.style.color="black";l.style.padding="5px 10px";l.innerHTML="Top";l.classList.add("scroll-box-item");l.addEventListener("click",z);let n=document.createElement("div");n.appendChild(l);n.appendChild(o);n.appendChild(r);n.style.position="fixed";n.style.display="flex";n.style.bottom=0;n.style.right=0;n.classList.add("scroll-box");document.body.appendChild(n);const C=`<p>CSS - Cascading Style Sheets</p>
+`;document.body.appendChild(S);document.querySelector("#btn-project").addEventListener("click",function(){document.querySelector("#section-project").scrollIntoView()});document.querySelector("#btn-details").addEventListener("click",function(){document.querySelector("#section-details").scrollIntoView()});document.querySelector("#btn-classworks").addEventListener("click",function(){document.querySelector("#section-classworks").scrollIntoView()});function x(){return window.scrollTop||document.body.scrollTop||document.documentElement&&document.documentElement.scrollTop}x();let a;function q(){window.scrollBy(0,2,"smooth")}function z(){clearInterval(a),a=setInterval(q,50)}function C(){clearInterval(a)}window.addEventListener("wheel",function(){clearInterval(a)});window.addEventListener("scroll",function(){window.scrollY+window.innerHeight>=document.body.offsetHeight&&clearInterval(a)});function U(){clearInterval(a),document.body.scrollTop=0,document.documentElement.scrollTop=0}let o=document.createElement("div");o.style.background="lime";o.style.color="black";o.style.padding="5px 10px";o.classList.add("scroll-box-item");o.innerHTML="Auto";o.addEventListener("click",z);let r=document.createElement("div");r.style.background="red";r.style.padding="5px 10px";r.innerHTML="Stop";r.classList.add("scroll-box-item");r.addEventListener("click",C);let l=document.createElement("div");l.style.background="lightblue";l.style.color="black";l.style.padding="5px 10px";l.innerHTML="Top";l.classList.add("scroll-box-item");l.addEventListener("click",U);let n=document.createElement("div");n.appendChild(l);n.appendChild(o);n.appendChild(r);n.style.position="fixed";n.style.display="flex";n.style.bottom=0;n.style.right=0;n.classList.add("scroll-box");document.body.appendChild(n);const L=`<p>CSS - Cascading Style Sheets</p>
 <h2>Selectors</h2>
 <h3>Select by element tag</h3>
 <p>use the tag name to select a specific element</p>
@@ -412,7 +412,7 @@ p {
 </code></pre>
 <p>info: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties</a></p>
 <hr>
-`;let i=document.createElement("div");i.classList.add("content");i.setAttribute("id","css");i.innerHTML=C;document.querySelector("#section-css").appendChild(i);const U=`<p>Hyper Text Markup Language
+`;let d=document.createElement("div");d.classList.add("content");d.setAttribute("id","css");d.innerHTML=L;document.querySelector("#section-css").appendChild(d);const W=`<p>Hyper Text Markup Language
 info: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a></p>
 <h2>Doctype</h2>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
@@ -568,7 +568,7 @@ info: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://develo
 </div>
 <p>info: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg</a></p>
 <hr>
-`;let d=document.createElement("div");d.classList.add("content");d.setAttribute("id","html");d.innerHTML=U;document.querySelector("#section-html").appendChild(d);const W=`<h2>Comment</h2>
+`;let c=document.createElement("div");c.classList.add("content");c.setAttribute("id","html");c.innerHTML=W;document.querySelector("#section-html").appendChild(c);const T=`<h2>Comment</h2>
 <pre><code class="language-js">// a comment
 /* also a comment */
 </code></pre>
@@ -665,7 +665,7 @@ window.addEventListener( &quot;mouseover&quot;, console.log(&quot;hovered&quot;)
 <h3>setInterval()</h3>
 <h3>setTimeout()</h3>
 <hr>
-`;let c=document.createElement("div");c.classList.add("content");c.setAttribute("id","js");c.innerHTML=W;document.querySelector("#section-js").appendChild(c);const L=`<h1>Classwork 01: Inspect</h1>
+`;let p=document.createElement("div");p.classList.add("content");p.setAttribute("id","js");p.innerHTML=T;document.querySelector("#section-js").appendChild(p);const M=`<h1>Classwork 01: Inspect</h1>
 <p>Week 01</p>
 <p>Utilize the inspection tool within a web browser to examine an assigned website and analyze its logic, if present, concerning the following aspects:</p>
 <ul>
@@ -695,7 +695,7 @@ window.addEventListener( &quot;mouseover&quot;, console.log(&quot;hovered&quot;)
 <li>Use JS to add interactivity on a webpage.</li>
 </ul>
 <hr>
-`;let p=document.createElement("div");p.classList.add("content");p.setAttribute("id","classwork-inspect");p.innerHTML=L;document.querySelector("#section-classworks").appendChild(p);const T=`<h1>Assessment Criteria</h1>
+`;let h=document.createElement("div");h.classList.add("content");h.setAttribute("id","classwork-inspect");h.innerHTML=M;document.querySelector("#section-classworks").appendChild(h);const k=`<h1>Assessment Criteria</h1>
 <table>
 <thead>
 <tr>
@@ -967,7 +967,7 @@ window.addEventListener( &quot;mouseover&quot;, console.log(&quot;hovered&quot;)
 </tr>
 </tbody>
 </table>
-`;let h=document.createElement("div");h.classList.add("content");h.setAttribute("id","details");h.innerHTML=T;document.querySelector("#section-details").appendChild(h);const M=`<p>In <em>Species of Spaces</em>, Georges Perec writes about space in various aspects: how it can be observed, experienced, and interacted with through different forms of writing such as essays, diaries, (concrete) poetry, lists of tasks, timetables, etc. His works consist of a blend of fact and fiction, intertwining the two, leading readers to explore novels, movies, and various other works of his contemporaries.</p>
+`;let m=document.createElement("div");m.classList.add("content");m.setAttribute("id","details");m.innerHTML=k;document.querySelector("#section-details").appendChild(m);const E=`<p>In <em>Species of Spaces</em>, Georges Perec writes about space in various aspects: how it can be observed, experienced, and interacted with through different forms of writing such as essays, diaries, (concrete) poetry, lists of tasks, timetables, etc. His works consist of a blend of fact and fiction, intertwining the two, leading readers to explore novels, movies, and various other works of his contemporaries.</p>
 <p>For this project, we will explore the spaces within and between everyday objects. Each object will be examined from various aspects, such as ideas, concepts, narratives, etc., either in the form of fact or fiction and will be executed through graphic design, utilizing a webpage as the medium.</p>
 <p>Course topics:</p>
 <ul>
@@ -977,4 +977,4 @@ window.addEventListener( &quot;mouseover&quot;, console.log(&quot;hovered&quot;)
 <li>Utilizing text editors for web development</li>
 <li>Understanding webpages as a medium</li>
 </ul>
-`;let m=document.createElement("div");m.classList.add("content");m.setAttribute("id","project");m.innerHTML=M;document.querySelector("#section-project").appendChild(m);
+`;let u=document.createElement("div");u.classList.add("content");u.setAttribute("id","project");u.innerHTML=E;document.querySelector("#section-project").appendChild(u);
