@@ -1,4 +1,4 @@
-(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))v(e);new MutationObserver(e=>{for(const n of e)if(n.type==="childList")for(const g of n.addedNodes)g.tagName==="LINK"&&g.rel==="modulepreload"&&v(g)}).observe(document,{childList:!0,subtree:!0});function u(e){const n={};return e.integrity&&(n.integrity=e.integrity),e.referrerPolicy&&(n.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?n.credentials="include":e.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function v(e){if(e.ep)return;e.ep=!0;const n=u(e);fetch(e.href,n)}})();addEventListener("load",function(){var S=document.querySelectorAll("pre code.hljs");Array.prototype.forEach.call(S,function(s){var u=s.result.language;s.insertAdjacentHTML("afterbegin",`<label>${u}</label>`)})});let b=document.createElement("div");b.classList.add("menu","rotating");b.innerHTML=`
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))v(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const g of t.addedNodes)g.tagName==="LINK"&&g.rel==="modulepreload"&&v(g)}).observe(document,{childList:!0,subtree:!0});function u(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function v(e){if(e.ep)return;e.ep=!0;const t=u(e);fetch(e.href,t)}})();addEventListener("load",function(){var S=document.querySelectorAll("pre code.hljs");Array.prototype.forEach.call(S,function(s){var u=s.result.language;s.insertAdjacentHTML("afterbegin",`<label>${u}</label>`)})});let b=document.createElement("div");b.classList.add("menu","rotating");b.innerHTML=`
   <div id="btn-html" class="menu-item">HTML</div>
   <div id="btn-css" class="menu-item">CSS</div>
   <div id="btn-js" class="menu-item">JS</div>
@@ -6,7 +6,7 @@
   <div id="btn-project" class="menu-item">Project</div>
   <div id="btn-details" class="menu-item">Details</div>
   <div id="btn-classworks" class="menu-item">Classworks</div>
-`;document.body.appendChild(f);document.querySelector("#btn-project").addEventListener("click",function(){document.querySelector("#section-project").scrollIntoView()});document.querySelector("#btn-details").addEventListener("click",function(){document.querySelector("#section-details").scrollIntoView()});document.querySelector("#btn-classworks").addEventListener("click",function(){document.querySelector("#section-classworks").scrollIntoView()});function y(){return window.scrollTop||document.body.scrollTop||document.documentElement&&document.documentElement.scrollTop}y();let a;function w(){window.scrollBy(0,2,"smooth")}function x(){clearInterval(a),a=setInterval(w,50)}function q(){clearInterval(a)}window.addEventListener("wheel",function(){clearInterval(a)});window.addEventListener("scroll",function(){window.scrollY+window.innerHeight>=document.body.offsetHeight&&clearInterval(a)});function z(){clearInterval(a),document.body.scrollTop=0,document.documentElement.scrollTop=0}let o=document.createElement("div");o.style.background="lime";o.style.color="black";o.style.padding="5px 10px";o.classList.add("scroll-box-item");o.innerHTML="Auto";o.addEventListener("click",x);let r=document.createElement("div");r.style.background="red";r.style.padding="5px 10px";r.innerHTML="Stop";r.classList.add("scroll-box-item");r.addEventListener("click",q);let l=document.createElement("div");l.style.background="lightblue";l.style.color="black";l.style.padding="5px 10px";l.innerHTML="Top";l.classList.add("scroll-box-item");l.addEventListener("click",z);let t=document.createElement("div");t.appendChild(l);t.appendChild(o);t.appendChild(r);t.style.position="fixed";t.style.display="flex";t.style.bottom=0;t.style.right=0;t.classList.add("scroll-box");document.body.appendChild(t);const U=`<p>CSS - Cascading Style Sheets</p>
+`;document.body.appendChild(f);document.querySelector("#btn-project").addEventListener("click",function(){document.querySelector("#section-project").scrollIntoView()});document.querySelector("#btn-details").addEventListener("click",function(){document.querySelector("#section-details").scrollIntoView()});document.querySelector("#btn-classworks").addEventListener("click",function(){document.querySelector("#section-classworks").scrollIntoView()});function y(){return window.scrollTop||document.body.scrollTop||document.documentElement&&document.documentElement.scrollTop}y();let a;function w(){window.scrollBy(0,2,"smooth")}function x(){clearInterval(a),a=setInterval(w,50)}function q(){clearInterval(a)}window.addEventListener("wheel",function(){clearInterval(a)});window.addEventListener("scroll",function(){window.scrollY+window.innerHeight>=document.body.offsetHeight&&clearInterval(a)});function z(){clearInterval(a),document.body.scrollTop=0,document.documentElement.scrollTop=0}let o=document.createElement("div");o.style.background="lime";o.style.color="black";o.style.padding="5px 10px";o.classList.add("scroll-box-item");o.innerHTML="Auto";o.addEventListener("click",x);let r=document.createElement("div");r.style.background="red";r.style.padding="5px 10px";r.innerHTML="Stop";r.classList.add("scroll-box-item");r.addEventListener("click",q);let l=document.createElement("div");l.style.background="lightblue";l.style.color="black";l.style.padding="5px 10px";l.innerHTML="Top";l.classList.add("scroll-box-item");l.addEventListener("click",z);let n=document.createElement("div");n.appendChild(l);n.appendChild(o);n.appendChild(r);n.style.position="fixed";n.style.display="flex";n.style.bottom=0;n.style.right=0;n.classList.add("scroll-box");document.body.appendChild(n);const C=`<p>CSS - Cascading Style Sheets</p>
 <h2>Selectors</h2>
 <h3>Select by element tag</h3>
 <p>use the tag name to select a specific element</p>
@@ -412,7 +412,7 @@ p {
 </code></pre>
 <p>info: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties</a></p>
 <hr>
-`;let i=document.createElement("div");i.classList.add("content");i.setAttribute("id","css");i.innerHTML=U;document.querySelector("#section-css").appendChild(i);const C=`<p>Hyper Text Markup Language
+`;let i=document.createElement("div");i.classList.add("content");i.setAttribute("id","css");i.innerHTML=C;document.querySelector("#section-css").appendChild(i);const U=`<p>Hyper Text Markup Language
 info: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a></p>
 <h2>Doctype</h2>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
@@ -568,7 +568,7 @@ info: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://develo
 </div>
 <p>info: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg">https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg</a></p>
 <hr>
-`;let d=document.createElement("div");d.classList.add("content");d.setAttribute("id","html");d.innerHTML=C;document.querySelector("#section-html").appendChild(d);const W=`<h2>Comment</h2>
+`;let d=document.createElement("div");d.classList.add("content");d.setAttribute("id","html");d.innerHTML=U;document.querySelector("#section-html").appendChild(d);const W=`<h2>Comment</h2>
 <pre><code class="language-js">// a comment
 /* also a comment */
 </code></pre>
@@ -667,36 +667,32 @@ window.addEventListener( &quot;mouseover&quot;, console.log(&quot;hovered&quot;)
 <hr>
 `;let c=document.createElement("div");c.classList.add("content");c.setAttribute("id","js");c.innerHTML=W;document.querySelector("#section-js").appendChild(c);const L=`<h1>Classwork 01: Inspect</h1>
 <p>Week 01</p>
+<p>Utilize the inspection tool within a web browser to examine an assigned website and analyze its logic, if present, concerning the following aspects:</p>
 <ul>
-<li>Use inspection tool in a web browser to look into an assigned website and find out the logic of (if any)
-<ul>
-<li>typography</li>
-<li>color</li>
-<li>grid</li>
-<li>spacing</li>
-<li>illustration</li>
-<li>icon</li>
+<li>Typography</li>
+<li>Color scheme</li>
+<li>Grid layout</li>
+<li>Spacing</li>
+<li>Illustrations</li>
+<li>Icons</li>
 </ul>
-</li>
-<li>Presentation and discussion</li>
-</ul>
+<p>Present and discuss your findings.</p>
 <hr>
 <h1>Classwork 02: Moving Page</h1>
 <p>Week 02</p>
+<p>Choose an audiovisual content such as a movie, music, anime, etc., as the starting point for a webpage design.</p>
 <ul>
-<li>Use HTML to create elements on a webpage</li>
-<li>Use CSS to style the created elements</li>
-<li>Use CSS Animation to make the elements move.</li>
-<li>Presentation and discussion</li>
+<li>Use HTML to create elements on the webpage.</li>
+<li>Use CSS to style the created elements and CSS Animation to make the elements move.</li>
 </ul>
 <hr>
 <h1>Classwork 03: JS</h1>
 <p>Week 03</p>
+<p>Create a webpage with added JavaScript to implement interactivity, featuring either the same content as Classwork 02 or new content.</p>
 <ul>
-<li>Use HTML to create elements on a webpage</li>
-<li>Use CSS to style the created elements</li>
-<li>Use JS to make interactivity on a wenpage</li>
-<li>Presentation and discussion</li>
+<li>Use HTML to create elements on a webpage.</li>
+<li>Use CSS to style the created elements.</li>
+<li>Use JS to add interactivity on a webpage.</li>
 </ul>
 <hr>
 `;let p=document.createElement("div");p.classList.add("content");p.setAttribute("id","classwork-inspect");p.innerHTML=L;document.querySelector("#section-classworks").appendChild(p);const T=`<h1>Assessment Criteria</h1>
